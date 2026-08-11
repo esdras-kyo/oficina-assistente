@@ -1,0 +1,146 @@
+[
+  {
+    "id": "oleo_01",
+    "procedimento": "troca_oleo",
+    "passo": 1,
+    "total_passos": 9,
+    "texto": "Ligue o motor por três minutos e desligue. Óleo morno escorre melhor, mas óleo quente queima a mão.",
+    "ferramenta": null,
+    "risco": "óleo acima de 60 graus causa queimadura",
+    "verificacao_visual": null,
+    "pre_requisito": null
+  },
+  {
+    "id": "oleo_02",
+    "procedimento": "troca_oleo",
+    "passo": 2,
+    "total_passos": 9,
+    "texto": "Com o motor desligado e o carro no plano, puxe o freio de mão e calce as rodas traseiras.",
+    "ferramenta": null,
+    "risco": "carro sem calço pode deslizar do macaco",
+    "verificacao_visual": "freio_mao",
+    "pre_requisito": "motor_desligado"
+  },
+  {
+    "id": "oleo_03",
+    "procedimento": "troca_oleo",
+    "passo": 3,
+    "total_passos": 9,
+    "texto": "Abra o capô e solte a tampa do bocal de óleo. Isso alivia a pressão e o óleo desce mais rápido.",
+    "ferramenta": null,
+    "risco": null,
+    "verificacao_visual": "tampa_bocal_aberta",
+    "pre_requisito": "motor_desligado"
+  },
+  {
+    "id": "oleo_04",
+    "procedimento": "troca_oleo",
+    "passo": 4,
+    "total_passos": 9,
+    "texto": "Posicione a bacia sob o cárter e solte o bujão girando no sentido anti-horário. Segure firme no fim da rosca.",
+    "ferramenta": "chave de 17 mm",
+    "risco": "óleo morno — use luva",
+    "verificacao_visual": "bujao_removido",
+    "pre_requisito": "motor_frio"
+  },
+  {
+    "id": "oleo_05",
+    "procedimento": "troca_oleo",
+    "passo": 5,
+    "total_passos": 9,
+    "texto": "Deixe escorrer por dez minutos, até virar gotejamento. Não tenha pressa aqui: o que sobrar dilui o óleo novo.",
+    "ferramenta": null,
+    "risco": null,
+    "verificacao_visual": null,
+    "pre_requisito": null
+  },
+  {
+    "id": "oleo_06",
+    "procedimento": "troca_oleo",
+    "passo": 6,
+    "total_passos": 9,
+    "texto": "Troque a arruela de vedação do bujão e recoloque-o. Aperte com torquímetro, sem forçar além do especificado.",
+    "ferramenta": "torquímetro",
+    "risco": "apertar demais espana a rosca do cárter",
+    "verificacao_visual": "bujao_recolocado",
+    "pre_requisito": null
+  },
+  {
+    "id": "oleo_07",
+    "procedimento": "troca_oleo",
+    "passo": 7,
+    "total_passos": 9,
+    "texto": "Remova o filtro de óleo antigo com a chave de filtro. Passe óleo novo no anel de borracha do filtro novo antes de encaixar.",
+    "ferramenta": "chave de filtro",
+    "risco": null,
+    "verificacao_visual": "filtro_novo_instalado",
+    "pre_requisito": null
+  },
+  {
+    "id": "oleo_08",
+    "procedimento": "troca_oleo",
+    "passo": 8,
+    "total_passos": 9,
+    "texto": "Complete pelo bocal com o óleo especificado no manual, um pouco abaixo do volume total. Feche a tampa.",
+    "ferramenta": "funil",
+    "risco": "óleo em excesso danifica o motor",
+    "verificacao_visual": "tampa_bocal_fechada",
+    "pre_requisito": null
+  },
+  {
+    "id": "oleo_09",
+    "procedimento": "troca_oleo",
+    "passo": 9,
+    "total_passos": 9,
+    "texto": "Ligue o motor por um minuto, desligue, espere cinco minutos e confira o nível na vareta. Complete se estiver abaixo da marca.",
+    "ferramenta": null,
+    "risco": null,
+    "verificacao_visual": "nivel_conferido",
+    "pre_requisito": null
+  },
+
+  {
+    "id": "niveis_01",
+    "procedimento": "verificar_niveis",
+    "passo": 1,
+    "total_passos": 4,
+    "texto": "Com o motor frio e o carro no plano, puxe a vareta do óleo, limpe com um pano e recoloque até o fim.",
+    "ferramenta": "pano",
+    "risco": null,
+    "verificacao_visual": null,
+    "pre_requisito": "motor_frio"
+  },
+  {
+    "id": "niveis_02",
+    "procedimento": "verificar_niveis",
+    "passo": 2,
+    "total_passos": 4,
+    "texto": "Puxe a vareta de novo e leia. O óleo deve estar entre as marcas de mínimo e máximo, mais perto do máximo.",
+    "ferramenta": null,
+    "risco": null,
+    "verificacao_visual": "vareta_lida",
+    "pre_requisito": null
+  },
+  {
+    "id": "niveis_03",
+    "procedimento": "verificar_niveis",
+    "passo": 3,
+    "total_passos": 4,
+    "texto": "Confira o reservatório de arrefecimento pelo lado de fora. O nível deve estar entre mínimo e máximo. Nunca abra com o motor quente.",
+    "ferramenta": null,
+    "risco": "abrir o reservatório quente causa queimadura grave por vapor",
+    "verificacao_visual": "reservatorio_conferido",
+    "pre_requisito": "motor_frio"
+  },
+  {
+    "id": "niveis_04",
+    "procedimento": "verificar_niveis",
+    "passo": 4,
+    "total_passos": 4,
+    "texto": "Por último, confira o fluido de freio e a água do limpador. Fluido de freio abaixo do mínimo pede oficina, não complemento.",
+    "ferramenta": null,
+    "risco": "nível baixo de fluido de freio indica desgaste ou vazamento",
+    "verificacao_visual": null,
+    "pre_requisito": null
+  }
+]
