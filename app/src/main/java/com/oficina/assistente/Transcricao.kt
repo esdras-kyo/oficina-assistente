@@ -8,7 +8,7 @@ import java.text.Normalizer
 
 class TranscritorWhisper(
     context: Context,
-    nomeModelo: String = "ggml-small-q5_1.bin"
+    nomeModelo: String = "ggml-base.bin"
 ) : Transcritor {
 
     private val ctx: WhisperContext =
