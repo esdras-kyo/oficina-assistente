@@ -24,3 +24,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "AssistenteOficina"
 include(":app")
+include(":whisperlib")
+project(":whisperlib").projectDir =
+    file("/Users/esdras/whisper.cpp/examples/whisper.android/lib")
