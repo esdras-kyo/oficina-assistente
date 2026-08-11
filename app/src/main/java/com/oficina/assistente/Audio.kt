@@ -31,7 +31,8 @@ import kotlin.math.sqrt
  */
 class GravadorAudio(
     private val silencioParaFecharMs: Long = 700,
-    private val limiarRms: Float = 0.012f
+    private val limiarRms: Float = 0.012f,
+    private val maxSegundos: Int = 12
 ) {
     companion object { const val TAXA = 16_000 }
 
@@ -70,6 +71,7 @@ class GravadorAudio(
                 }
                 val rms = sqrt(soma / n).toFloat()
                 val agora = System.currentTimeMillis()
+                if (acumulado.size > TAXA * maxSegundos) break
 
                 if (rms > limiarRms) {
                     ultimoSomMs = agora
